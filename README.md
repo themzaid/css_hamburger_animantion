@@ -1,2 +1,2 @@
 # css_hamburger_animantion
-This is my first animated hamburger created in css only.
+This is my first animated hamburger created in css and javascript.
