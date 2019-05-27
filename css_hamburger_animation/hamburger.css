@@ -1,0 +1,52 @@
+.icon {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 0.2rem;
+  background: #fff;
+  position: absolute;
+  top: 3.5rem;
+  left: 2.5rem;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 0.2rem;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.hamburger:before {
+  top: -0.5rem;
+}
+.hamburger:after {
+  top: 0.5rem;
+}
+
+.icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  transition: 0.3s;
+}
+.icon .hamburger {
+  transition: 0.3s 0.1s;
+}
+
+.icon.active .hamburger:before {
+  transform: rotate(45deg);
+  transition: 0.3s;
+  top: 0;
+}
+
+.icon.active .hamburger:after {
+  transform: rotate(-45deg);
+  transition: 0.3s;
+  top: 0;
+}
